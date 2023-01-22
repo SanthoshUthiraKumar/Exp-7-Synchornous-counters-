@@ -1,7 +1,13 @@
 # Exp-6-Synchornous-counters - up counter and down counter 
-### AIM: To implement 4 bit up and down counters and validate  functionality.
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+### AIM: 
+To implement 4 bit up and down counters and validate  functionality.
+
+### HARDWARE REQUIRED:  –
+PC, Cyclone II , USB flasher
+
+### SOFTWARE REQUIRED:  
+Quartus prime
+
 ### THEORY 
 
 ## UP COUNTER 
@@ -45,44 +51,72 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 
 4-bit Count Down Counter
-### Procedure
-/* write all the steps invloved */
 
+### Procedure
+```
+1.Using if statement construct a 4bit UP Counter.
+
+2.Repeat the same for 4bit DOWN Counter.
+
+3.Find RTL and Timing Diagram for both the counters.
+
+4.End the program.
+```
 
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Santhosh U
+RegisterNumber:  22009224
+ 
+UP Counter
 
+module uc(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_up;
+always@(posedge CLK or posedge reset)
+begin
+if(reset)
+counter_up <=4'd0;
+else
+counter_up <=counter_up+4'd1;
+end
+assign counter = counter_up;
+endmodule
 
+DOWN Counter
 
+module dc(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_down;
+always@(posedge CLK or posedge reset)
+begin
+if(reset)
+counter_down <=4'd0;
+else
+counter_down <=counter_down-4'd1;
+end
+assign counter = counter_down;
+endmodule
+```
 
+### OUTPUT
+### RTL LOGIC
+### UP COUNTER
+![UPCounterRTL](https://user-images.githubusercontent.com/119477975/213927675-5244d6d1-3cea-4cb4-a361-e2efed52102d.png)
 
+### DOWN COUNTER  
+![DOWNCounterRTL](https://user-images.githubusercontent.com/119477975/213927748-3d617bd3-719d-43db-ae4c-6768ebaafdc6.png)
 
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
-
-
-
-
-
-
-
-
-### TIMING DIGRAMS FOR COUNTER  
-
-
-
-
+### TIMING DIGRAMS 
+### UP COUNTER
+### DOWN COUNTER
 
 ### TRUTH TABLE 
-
-
+### UP COUNTER
+### DOWN COUNTER
 
 
 
 
 ### RESULTS 
+Thus the UP Counter and DOWN Counter are designed and 
