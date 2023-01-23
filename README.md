@@ -109,14 +109,17 @@ endmodule
 
 ### TIMING DIGRAMS 
 ### UP COUNTER
+![UPCounterSimulation](https://user-images.githubusercontent.com/119477975/213966025-f1f7d04e-5188-47ed-98da-1f6dfc310141.png)
+
 ### DOWN COUNTER
+![DOWNCounterSimulation](https://user-images.githubusercontent.com/119477975/213966047-ed4d0bd4-89b0-4784-83cd-ef317de1805e.png)
 
 ### TRUTH TABLE 
 ### UP COUNTER
+![UPCounterTT](https://user-images.githubusercontent.com/119477975/213965996-dca3cab9-9c60-47a0-ae34-f7d79852031e.png)
+
 ### DOWN COUNTER
-
-
-
+![DOWNCounterTT](https://user-images.githubusercontent.com/119477975/213966069-c4e3d9a0-be48-4a8e-88e5-4bb973f86912.png)
 
 ### RESULTS 
 Thus the UP Counter and DOWN Counter are designed and 
