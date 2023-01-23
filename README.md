@@ -122,4 +122,4 @@ endmodule
 ![DOWNCounterTT](https://user-images.githubusercontent.com/119477975/213966069-c4e3d9a0-be48-4a8e-88e5-4bb973f86912.png)
 
 ### RESULTS 
-Thus the UP Counter and DOWN Counter are designed and 
+Thus the UP Counter and DOWN Counter are designed and truth tables are verified using quartus software
